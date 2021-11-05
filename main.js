@@ -1,5 +1,11 @@
+/*
+ * @Date: 2021-11-04 21:51:04
+ * @LastEditors: LuoChun
+ * @LastEditTime: 2021-11-05 11:32:01
+ * @Description: 
+ */
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow} = require('electron') //使用nodejs的commonjs模块
 const path = require('path')
 
 function createWindow () {
@@ -7,7 +13,8 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    webPreferences: {
+    webPreferences: { //webpage的属性
+      nodeIntegration:true, //使用nodejs的功能
       preload: path.join(__dirname, 'preload.js')
     }
   })
