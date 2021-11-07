@@ -1,6 +1,12 @@
 /*
+ * @Description: 
+ * @Author: CeciRo
+ * @Date: 2021-11-07 16:34:52
+ * @LastEditTime: 2021-11-07 17:59:46
+ */
+/*
  * @Date: 2021-11-04 21:51:04
- * @LastEditors: LuoChun
+ * @LastEditors: Please set LastEditors
  * @LastEditTime: 2021-11-05 11:32:01
  * @Description: 
  */
@@ -30,6 +36,7 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
+  // require('devtron').install()
   createWindow()
 
   app.on('activate', function () {
