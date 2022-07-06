@@ -19,6 +19,6 @@
   "devDependencies": {
     "devtron": "^1.4.0",
     "electron": "^15.3.0",
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.19"
   }
 }
